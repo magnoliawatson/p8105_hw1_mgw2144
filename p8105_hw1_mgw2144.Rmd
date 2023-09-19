@@ -20,24 +20,15 @@ help("early_january_weather")
 ```
 
 The dataset "early_january_weather" has 15 variables: 
-  * origin
-    * weather station
-  * year, month, day, hour
-    * time of recording 
-  * temp, dewp
-    * temperature and dewpoint in F
-  * humid
-    * relative humidity 
-  * wind_dir, wind_speed, wind_gust
-    * wind direction (in degrees), speed and gust speed (in mph)
-  * precip
-    * precipitation in inches
-  * pressure 
-    * sea level pressure in millibars
-  * visib 
-    * visibility in miles
-  * time_hour
-    * date and hour of the recording
+*   origin (weather station)
+*   year, month, day, hour (time of recording)
+*   temp, dewp (temperature and dewpoint in F)
+*   humid (relative humidity)
+*   wind_dir, wind_speed, wind_gust (wind direction (in degrees), speed and gust       speed (in mph))
+*   precip (precipitation in inches)
+*   pressure (sea level pressure in millibars)
+*   visib (visibility in miles)
+*   time_hour (date and hour of the recording)
 
 ```{r}
 nrow(early_january_weather)
