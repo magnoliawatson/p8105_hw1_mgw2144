@@ -45,3 +45,12 @@ Write a short description of the dataset using inline R code; accessing the data
 
 the variables in this dataset, including names / values of important variables
 
+```{r}
+early_january_weather_2=
+  tibble(
+    x = early_january_weather[["time_hour"]],
+    y = early_january_weather[["temp"]]
+  )
+```
+
+
