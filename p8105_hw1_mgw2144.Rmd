@@ -49,12 +49,16 @@ the variables in this dataset, including names / values of important variables
 early_january_weather_2=
   tibble(
     x = early_january_weather[["time_hour"]],
-    y = early_january_weather[["temp"]]
+    y = early_january_weather[["temp"]],
+    z = early_january_weather[["humid"]]
   )
 ```
 
 ```{r}
-ggplot(early_january_weather_2, aes(x = x, y = y)) + geom_point()
+ggplot(early_january_weather_2, aes(x = x, y = y)) + 
+  geom_point(
+    mapping = aes(x = x, y = y), data = early_january_weather_2, colour = 'blue', size = 1
+  )
 
 ```
 
