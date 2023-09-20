@@ -61,4 +61,9 @@ ggplot(early_january_weather_2, aes(x = x, y = y)) +
   )
 
 ```
+The plot shows an increasing trend in temperature overall over the the course of the two week period. The temperature cycles up and down with the hours following the day and night cycles. There appears to be a cold period in the days approaching January 14th where the highs of the temperatures are lower and there is less spread between the highs and lows in the temperature points for the day. 
+
+```{r}
+ggsave("scatterplot_hw1.pdf")
+```
 
