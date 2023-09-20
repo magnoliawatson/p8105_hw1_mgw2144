@@ -4,6 +4,8 @@ output: github_document
 date: "2023-09-19"
 ---
 
+Problem 1
+
 install.packages("moderndive") performed in console
 
 ```{r}
@@ -46,12 +48,9 @@ Write a short description of the dataset using inline R code; accessing the data
 the variables in this dataset, including names / values of important variables
 
 ```{r}
-early_january_weather_2=
-  tibble(
-    x = early_january_weather[["time_hour"]],
-    y = early_january_weather[["temp"]],
-    z = early_january_weather[["humid"]]
-  )
+early_january_weather %>%
+  ggplot(aes(x = time_hour, y = temp, color = humid)) +
+  geom_point()
 ```
 
 ```{r}
@@ -65,4 +64,6 @@ ggsave("scatterplot_hw1.pdf")
 ```
 The plot shows an increasing trend in temperature overall over the the course of the two week period. The temperature cycles up and down with the hours following the day and night cycles. There appears to be a cold period in the days approaching January 14th where the highs of the temperatures are lower and there is less spread between the highs and lows in the temperature points for the day. 
 
+
+Problem 2
 
