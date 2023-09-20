@@ -53,4 +53,8 @@ early_january_weather_2=
   )
 ```
 
+```{r}
+ggplot(early_january_weather_2, aes(x = x, y = y)) + geom_point()
+
+```
 
