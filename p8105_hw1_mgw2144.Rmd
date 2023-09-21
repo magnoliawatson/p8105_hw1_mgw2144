@@ -96,4 +96,4 @@ factor_mean = problem_2_df %>%
 print(factor_mean)
 
 ```
-
+When trying to take the mean of each variable in the problem_2_df dataframe, a numeric value is returned for the numeric vector (vec_numeric) and the logical vector (vec_logical), however, the function does not work for the character vector (vec_char) and the factor vector (vec_factor) resulting in an output of "NA". 
