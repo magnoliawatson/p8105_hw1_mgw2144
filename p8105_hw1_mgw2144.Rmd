@@ -26,7 +26,7 @@ The dataset "early_january_weather" has 15 variables:
 *   year, month, day, hour (time of recording)
 *   temp, dewp (temperature and dewpoint in F)
 *   humid (relative humidity)
-*   wind_dir, wind_speed, wind_gust (wind direction (in degrees), speed and gust       speed (in mph))
+*   wind_dir, wind_speed, wind_gust (wind direction (in degrees), speed and gust speed (in mph))
 *   precip (precipitation in inches)
 *   pressure (sea level pressure in millibars)
 *   visib (visibility in miles)
@@ -59,4 +59,14 @@ The plot shows an increasing trend in temperature overall over the the course of
 
 
 Problem 2
+
+```{r}
+problem_2_df=
+  tibble(
+    vec_numeric = rnorm(1:10),
+    vec_char = c("one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"),
+    vec_logical = vec_numeric > 0, 
+    vec_factor = factor(c("A", "B", "C", "A", "B", "C", "A", "B", "C", "A"))
+  )
+```
 
