@@ -70,3 +70,12 @@ problem_2_df=
   )
 ```
 
+```{r}
+num_mean = problem_2_df %>%
+  pull(var = vec_numeric) %>%
+  mean()
+
+print(num_mean)
+
+```
+
