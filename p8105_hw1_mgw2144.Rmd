@@ -77,5 +77,23 @@ num_mean = problem_2_df %>%
 
 print(num_mean)
 
+char_mean = problem_2_df %>%
+  pull(var = vec_char) %>%
+  mean()
+
+print(char_mean)
+
+logic_mean = problem_2_df %>%
+  pull(var = vec_logical) %>%
+  mean()
+
+print(logic_mean)
+
+factor_mean = problem_2_df %>%
+  pull(var = vec_factor) %>%
+  mean()
+
+print(factor_mean)
+
 ```
 
