@@ -97,3 +97,10 @@ print(factor_mean)
 
 ```
 When trying to take the mean of each variable in the problem_2_df dataframe, a numeric value is returned for the numeric vector (vec_numeric) and the logical vector (vec_logical), however, the function does not work for the character vector (vec_char) and the factor vector (vec_factor) resulting in an output of "NA". 
+
+```{r}
+  as.numeric(pull(problem_2_df, vec_char))
+  as.numeric(pull(problem_2_df, vec_logical))
+  as.numeric(pull(problem_2_df, vec_factor))
+```
+When the as.numeric function is run on the character, logical, and function variables from the problem_2_df dataframe, the character variable returns "NA" for each of the 10 observations, the logical variable output is read as binary observations, and the factor variable is read as "1" "2" and "3" respective to the three assigned levels. The "NA" is returned for the character variable as there is no numerical equivalent for the observations inputted, the logical variable is presented as binary as "0" and "1" are assigned to the "FALSE" and "TRUE" outcomes, and the logical variable is presented as "1" "2" and "3" correstpondnig to each level inputted in the function. This helps to explain why the mean function only returned a numeric value for the logical function. 
