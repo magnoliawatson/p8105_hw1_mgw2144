@@ -41,20 +41,7 @@ The dataset "early_january_weather" has 15 variables:
 
 *   time_hour (date and hour of the recording)
 
-```{r}
-nrow(early_january_weather)
-ncol(early_january_weather)
-```
-There are 358 rows and 15 columns in the dataset as assessed through the nrow and ncol function.
-
-```{r}
-mean(early_january_weather[["temp"]])
-```
-The mean temperature in the dataset is 39.58 degrees fahrenheit.
-
-Write a short description of the dataset using inline R code; accessing the dataset help file can be informative. In your discussion, please include:
-
-the variables in this dataset, including names / values of important variables
+The most important variables in this dataset for this analysis are temp, humid, and time_hour. There are `r nrow(early_january_weather)` rows and `r ncol(early_january_weather)` columns in the dataset. The mean temperature in the dataset is `r mean(early_january_weather[["temp"]])` degrees fahrenheit.
 
 ```{r}
 early_january_weather %>%
