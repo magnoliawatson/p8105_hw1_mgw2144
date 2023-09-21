@@ -36,7 +36,7 @@ The dataset "early_january_weather" has 15 variables:
 nrow(early_january_weather)
 ncol(early_january_weather)
 ```
-There are 358 rows and 15 columns in the dataset as assessed trough the nrow and ncol function.
+There are 358 rows and 15 columns in the dataset as assessed through the nrow and ncol function.
 
 ```{r}
 mean(early_january_weather[["temp"]])
